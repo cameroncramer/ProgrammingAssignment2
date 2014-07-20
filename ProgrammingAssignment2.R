@@ -19,6 +19,6 @@ cacheSolve <- function(x=matrix(), ...) {
       return(m)
     }
     matrix<-x$get()							#Calculates matrix inverse if not done already 
-    m<-solve(matrix, ...)
+    m<-solve(matrix, ...)					#Defines m as the matrix inverse
     x$setmatrix(m)
     m										#Returns the matrix inverse
